@@ -1,0 +1,13 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="192" height="192" rx="51" fill="#4CB3A5"/>
+<ellipse cx="37.5012" cy="96.75" rx="12" ry="12" transform="rotate(90 37.5012 96.75)" fill="#517B75"/>
+<ellipse cx="154.501" cy="96.75" rx="12" ry="12" transform="rotate(90 154.501 96.75)" fill="#517B75"/>
+<ellipse cx="96.0012" cy="39" rx="12" ry="12" transform="rotate(90 96.0012 39)" fill="#517B75"/>
+<ellipse cx="136.501" cy="137.25" rx="12" ry="12" transform="rotate(90 136.501 137.25)" fill="#517B75"/>
+<ellipse cx="55.5012" cy="137.25" rx="12" ry="12" transform="rotate(90 55.5012 137.25)" fill="#517B75"/>
+<ellipse cx="54.3762" cy="55.4999" rx="12" ry="12" transform="rotate(90 54.3762 55.4999)" fill="#517B75"/>
+<ellipse cx="136.501" cy="55.4999" rx="12" ry="12" transform="rotate(90 136.501 55.4999)" fill="#517B75"/>
+<ellipse cx="95.2512" cy="153" rx="12" ry="12" transform="rotate(90 95.2512 153)" fill="white"/>
+<path d="M122.251 95.25C122.251 110.162 110.163 122.25 95.2512 122.25C80.3395 122.25 68.2512 110.162 68.2512 95.2501C68.2512 80.3384 80.3395 68.2501 95.2512 68.2501C110.163 68.2501 122.251 80.3384 122.251 95.25Z" stroke="white" stroke-width="10.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M105.242 146.354C101.291 140.414 98.3241 132.643 113.947 121.528L76.5547 121.528C92.1776 132.643 89.2107 140.414 85.2594 146.354H105.242Z" fill="white"/>
+</svg>
