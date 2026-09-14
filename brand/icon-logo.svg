@@ -1,0 +1,13 @@
+<svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="36.0001" height="36" rx="9.56252" fill="#4CB3A5"/>
+<ellipse cx="7.03149" cy="18.1407" rx="2.25" ry="2.25" transform="rotate(90 7.03149 18.1407)" fill="#517B75"/>
+<ellipse cx="28.969" cy="18.1407" rx="2.25" ry="2.25" transform="rotate(90 28.969 18.1407)" fill="#517B75"/>
+<ellipse cx="18.0002" cy="7.3125" rx="2.25" ry="2.25" transform="rotate(90 18.0002 7.3125)" fill="#517B75"/>
+<ellipse cx="25.594" cy="25.7344" rx="2.25" ry="2.25" transform="rotate(90 25.594 25.7344)" fill="#517B75"/>
+<ellipse cx="10.4065" cy="25.7344" rx="2.25" ry="2.25" transform="rotate(90 10.4065 25.7344)" fill="#517B75"/>
+<ellipse cx="10.1956" cy="10.4063" rx="2.25" ry="2.25" transform="rotate(90 10.1956 10.4063)" fill="#517B75"/>
+<ellipse cx="25.594" cy="10.4063" rx="2.25" ry="2.25" transform="rotate(90 25.594 10.4063)" fill="#517B75"/>
+<ellipse cx="17.8596" cy="28.6875" rx="2.25" ry="2.25" transform="rotate(90 17.8596 28.6875)" fill="white"/>
+<path d="M22.9221 17.8594C22.9221 20.6553 20.6556 22.9219 17.8596 22.9219C15.0637 22.9219 12.7971 20.6554 12.7971 17.8594C12.7971 15.0635 15.0637 12.7969 17.8596 12.7969C20.6556 12.7969 22.9221 15.0635 22.9221 17.8594Z" stroke="white" stroke-width="1.96875"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.7329 27.4414C18.9921 26.3276 18.4358 24.8706 21.3651 22.7865L14.354 22.7865C17.2833 24.8706 16.727 26.3276 15.9861 27.4414H19.7329Z" fill="white"/>
+</svg>
