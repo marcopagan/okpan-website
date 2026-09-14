@@ -30,7 +30,7 @@
             <div class="download-mobile inline md:hidden">
                 <Dialog>
 	                <Dialog.Trigger class="btn preset-filled bg-primary-800 px-32 py-16 gap-8 hover:gap-12">
-                        Download it on your computer
+                        Get it
                         <IconArrowUpRight class="size-18 transition" stroke="1.5"/>
                     </Dialog.Trigger>
                     <MobileModal />
