@@ -10,7 +10,7 @@
 
 <header class="sticky top-0 z-16">
     <div class="container mx-auto flex flex-wrap content-end justify-between px-16 py-8">
-        <button class="flex gap-8" onclick={() => body.scrollIntoView()}>
+        <button class="flex gap-8 pb-8" onclick={() => body.scrollIntoView()}>
             <img src={`${base}/brand/icon-logo.svg`} width="36" height="36" alt="Ọkpan logo"/>
             <h1 class="h2">Ọkpan</h1>
         </button>
