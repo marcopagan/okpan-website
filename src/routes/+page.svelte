@@ -25,7 +25,7 @@
                 Ọkpan is a platform for reconnecting dispersed collections. Import artefact records from any source, enrich them with situated knowledge such as Indigenous designations, oral histories, and cultural context, and publish a unified catalogue that brings a scattered collection back together, wherever the objects themselves remain.
             </p>
         </div>
-        <div class="col-span-12 lg:col-span-7 bg-primary-500 p-32 lg:p-48 flex flex-wrap items-center justify-center rounded-lg">
+        <div class="col-span-12 lg:col-span-7 bg-primary-500 lg:p-48 flex flex-wrap items-center justify-center rounded-xl lg:rounded-lg">
             <iframe class="rounded-xl shadow-xl aspect-video w-full h-auto" width="853" height="480" src="https://www.youtube-nocookie.com/embed/LXb3EKWsInQ?si=9aYDBlmUxg4YmG-a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
     </section>

@@ -40,6 +40,11 @@ button:hover, a:hover {
 	border-color: var(--color-primary-200);
 }
 
+[data-scope='toast'][data-part='root']{
+	max-width: 320px;
+}
+
+
 [data-theme='okpan'] {
 	--text-scaling: 1;
 	--typo-base--font-family: Inter, Helvetica, Arial, sans-serif;

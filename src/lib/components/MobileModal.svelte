@@ -1,9 +1,16 @@
 <script lang="ts">
-    import { IconX, IconClipboardCopy } from '@tabler/icons-svelte';
-    import { Dialog, Portal } from '@skeletonlabs/skeleton-svelte';
+    import { IconX, IconCopy, IconClipboardCheck } from '@tabler/icons-svelte';
+    import { Dialog, Portal, Toast, createToaster } from '@skeletonlabs/skeleton-svelte';
+	const toaster = createToaster();
 
     const modalAnimation = 'transition transition-discrete opacity-0 translate-y-[100px] starting:data-[state=open]:opacity-0 starting:data-[state=open]:translate-y-[100px] data-[state=open]:opacity-100 data-[state=open]:translate-y-0';
 
+    function copyLink() {
+        navigator.clipboard.writeText('https://digitalbenin.org');
+        toaster.info({
+			description: 'Link copied in the clipboard!',
+		})
+  }
 </script>
 
 <Portal>
@@ -31,9 +38,9 @@
 			</Dialog.Description>
 				            
             <footer class="flex flex-col justify-end gap-8 py-12">
-                <button type="button" class="btn bg-primary-600 text-white gap-8 py-12 px-24 w-full">
+                <button type="button" class="btn bg-primary-600 text-white gap-8 py-12 px-24 w-full" onclick={copyLink}>
                     Copy link
-                    <IconClipboardCopy class="size-20" stroke="1.5"/>
+                    <IconCopy class="size-20" stroke="1.5"/>
                 </button>
 			    <Dialog.CloseTrigger class="btn preset-outlined-surface-500 text-surface-500 py-12 px-24 w-full">Close</Dialog.CloseTrigger>
 		    </footer>
@@ -42,3 +49,16 @@
 
 	</Dialog.Positioner>
 </Portal>
+
+
+<Toast.Group {toaster}>
+	{#snippet children(toast)}
+		<Toast {toast} class='px-16 py-8'>
+            <IconClipboardCheck class="size-24 text-primary-500" stroke="1.5" />
+			<Toast.Message>
+				<Toast.Description>{toast.description}</Toast.Description>
+			</Toast.Message>
+			<Toast.CloseTrigger />
+		</Toast>
+	{/snippet}
+</Toast.Group>
