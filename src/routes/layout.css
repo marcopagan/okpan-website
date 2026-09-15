@@ -284,14 +284,20 @@ button:hover, a:hover {
 	cursor: pointer;
 }
 
+button[disabled]{
+	cursor: not-allowed;
+}
+
 .download-radio-item:has(input[type="radio"]:checked) {
 	border-color: var(--color-primary-500);
 	box-shadow: var(--shadow-xl);
+	background-color: var(--color-primary-50);
 	transition: all .3s;
 }
 
 .download-radio-item:hover {
-	border-color: var(--color-primary-200);
+	border-color: var(--color-primary-400);
+	transition: all .3s;
 }
 
 [data-scope='toast'][data-part='root']{
@@ -314,8 +320,4 @@ button:hover, a:hover {
             }
         }
     }
-}
-
-button[disabled]{
-	cursor: not-allowed;
 }
