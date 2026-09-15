@@ -7,7 +7,7 @@
 </script>
 
 <section class="container mx-auto px-0 md:px-16">
-    <div class="hero h-700 sm:rounded-lg relative overflow-hidden">
+    <div class="hero h-600 md:h-700 sm:rounded-lg relative overflow-hidden">
 
         <video autoplay disablepictureinpicture loop muted class="w-full h-full absolute object-cover -z-5">
             <source src={`${base}/brand/hero-vid.mp4`} type="video/mp4" />

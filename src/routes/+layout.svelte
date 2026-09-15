@@ -9,7 +9,6 @@
   <link rel="icon" href="imgs/favicon.svg" />
   <meta name="description" content="Ọkpan brings together records of artefacts scattered across museums worldwide, reconnecting them with the communities, knowledge, and histories they were separated from." />
   <meta name="keywords" content="Ọkpan, tool, museums collections">
-  <meta name="author" content="Calibro" />
   <link rel="canonical" href="https://domain.ext" />
   <meta property="og:locale" content="en_US" />
   <meta property="og:type" content="website" />

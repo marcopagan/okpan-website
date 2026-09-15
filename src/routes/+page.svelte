@@ -8,7 +8,7 @@
 
 <TopNav />
 
-<main class="grid grid-cols-1 my-0 lg:my-16">
+<main class="grid grid-cols-1 my-0 lg:my-16 -mt-2">
     <Hero />
 
     <!-- What is it -->
