@@ -36,7 +36,7 @@
             </p>
         </div>
         <div class="col-span-12 lg:col-span-7 flex flex-col md:flex-row gap-16">
-            <div class="card p-16 preset-outlined flex flex-col gap-16" style="border: 1.5px solid var(--color-surface-100)">
+            <div class="card p-16 flex flex-col gap-16 border-[1.5px] border-surface-100">
                 <img src={`${base}/imgs/card-db.svg`} width="48" height="48" alt="Digital Benin logo">
                 <h4 class="font-semibold">Digital Benin</h4>
                 <p class="text-sm" style="height: stretch">Digital Benin brings together all objects, historical photographs and rich documentation material from collections worldwide to provide a long-requested overview of the royal artefacts from Benin Kingdom looted in the late nineteenth century. </p>
@@ -45,7 +45,7 @@
                     <IconArrowUpRight stroke="1.5" class="size-18" />
                 </a>
             </div>
-            <div class="card p-16 preset-outlined flex flex-col gap-16" style="border: 1.5px solid var(--color-surface-100)">
+            <div class="card p-16 flex flex-col gap-16 border-[1.5px] border-surface-100" >
                 <img src={`${base}/imgs/card-loupe.svg`} width="48" height="48" alt="Loupe logo">
                 <h4 class="font-semibold">Loupe</h4>
                 <p class="text-sm" style="height: stretch">Loupe is a platform for provenance research. Structure an object's ownership history event by event, link each step to its supporting evidence, and visualize the full timeline, turning scattered archival research into a clear, shareable record.</p>
