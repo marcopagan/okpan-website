@@ -1,7 +1,7 @@
 <script lang="ts">
     import { IconChevronDown, IconArrowUpRight } from '@tabler/icons-svelte';
     import { Dialog  } from '@skeletonlabs/skeleton-svelte';
-	import DownloadModal from './DownloadModal.svelte';
+    import DesktopModal from './DesktopModal.svelte';
 	import MobileModal from './MobileModal.svelte';
     import { base } from '$app/paths';
 </script>
@@ -23,7 +23,7 @@
                         Download
                         <IconChevronDown class="size-18 transition" stroke="1.5"/>
                     </Dialog.Trigger>
-                    <DownloadModal />
+                    <DesktopModal />
                 </Dialog>
             </div>
 
