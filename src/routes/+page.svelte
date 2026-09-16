@@ -39,7 +39,7 @@
             <div class="card p-16 flex flex-col gap-16 border-[1.5px] border-surface-100">
                 <img src={`${base}/imgs/card-db.svg`} width="48" height="48" alt="Digital Benin logo">
                 <h4 class="font-semibold">Digital Benin</h4>
-                <p class="text-sm" style="height: stretch">Digital Benin brings together all objects, historical photographs and rich documentation material from collections worldwide to provide a long-requested overview of the royal artefacts from Benin Kingdom looted in the late nineteenth century. </p>
+                <p class="text-sm text-brand-contrast-dark" style="height: stretch">Digital Benin brings together all objects, historical photographs and rich documentation material from collections worldwide to provide a long-requested overview of the royal artefacts from Benin Kingdom looted in the late nineteenth century. </p>
                 <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-tonal-brand p-16 hover:gap-12">
                     Go to the website
                     <IconArrowUpRight stroke="1.5" class="size-18" />
@@ -48,7 +48,7 @@
             <div class="card p-16 flex flex-col gap-16 border-[1.5px] border-surface-100" >
                 <img src={`${base}/imgs/card-loupe.svg`} width="48" height="48" alt="Loupe logo">
                 <h4 class="font-semibold">Loupe</h4>
-                <p class="text-sm" style="height: stretch">Loupe is a platform for provenance research. Structure an object's ownership history event by event, link each step to its supporting evidence, and visualize the full timeline, turning scattered archival research into a clear, shareable record.</p>
+                <p class="text-sm text-brand-contrast-dark" style="height: stretch">Loupe is a platform for provenance research. Structure an object's ownership history event by event, link each step to its supporting evidence, and visualize the full timeline, turning scattered archival research into a clear, shareable record.</p>
                 <a href="https://digitalbenin.org" target="_blank" rel="noopener" class="btn preset-tonal-brand p-16 hover:gap-12">
                     Discover it
                     <IconArrowUpRight stroke="1.5" class="size-18" />
@@ -116,13 +116,13 @@
                 <h3 class="h3">Ọkpan</h3>
             </div>
 
-            <p class="text-surface-600 text-balance">
+            <p class="text-brand-contrast-dark text-balance">
                 Ọkpan brings together records of artefacts scattered across museums worldwide, reconnecting them with the communities, knowledge, and histories they were separated from.
             </p>
         </div>
 
         <div class="col-span-12 lg:col-span-3 lg:col-start-9 lg:flex lg:items-end lg:justify-end">
-            <p class="text-surface-600 text-sm">Information in a small size</p>
+            <p class="text-brand-contrast-dark text-sm">Information in a small size</p>
         </div>
 
     </div>
