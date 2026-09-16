@@ -10,7 +10,8 @@
 			title: 'Import any kind of data',
 			description:
 				"Bring in artefact records from spreadsheets, JSON files, museum databases exports . Ọkpan adapts to the data you already have, however incomplete or inconsistent it is.",
-            imgName: 'feature0.png',
+            fileName: 'feature0.png',
+			fileType: 'image',
 			icon: IconTableImport
                 
 		},
@@ -19,7 +20,8 @@
 			title: 'Connections: situated knowledge, not fixed vocabularies',
 			description:
 				"Standard ontologies and vocabularies are built without the knowledge of the communities objects come from. Connections let you attach Indigenous designations, oral histories, and cultural context directly to a record: knowledge that doesn't need to fit inside someone else's classification system to count.",
-            imgName: 'feature1.png',
+            fileName: 'feature1.png',
+			fileType: 'image',
 			icon: IconChartCircles
 		},
 		{
@@ -27,7 +29,8 @@
 			title: 'Build your catalogue, publish it online',
 			description:
 				"Turn imported and enriched records into a structured catalogue, and publish it as a public website others can browse, search, and cite. No separate web project required.",
-            imgName: 'feature2.png',
+            fileName: 'feature2.mp4',
+			fileType: 'video',
 			icon: IconWorld
 		},
         {
@@ -35,7 +38,8 @@
 			title: 'Offline-first, built for collaboration',
 			description:
 				"Work on your catalogue without an internet connection when you need to, then sync and collaborate with partner institutions, researchers, and communities when you're back online.",
-            imgName: 'feature3.png',
+            fileName: 'feature3.png',
+			fileType: 'image',
 			icon: IconUsersGroup
 		},
         {
@@ -43,7 +47,8 @@
 			title: 'Publish enriched, open datasets',
 			description:
 				"Share your enriched collection as structured, reusable data, so the knowledge you've gathered can travel beyond your own catalogue and support research elsewhere.",
-            imgName: 'feature4.png',
+            fileName: 'feature4.png',
+			fileType: 'image',
 			icon: IconDatabaseExport
 		}
 	];
@@ -54,11 +59,20 @@
 
 <section class="container mx-auto py-48 px-16 grid grid-cols-12 gap-16">
     <div class="col-span-12 lg:col-span-7">
-        <img 
-            src={`${base}/imgs/${features[parseInt(selected)].imgName}`}
-            alt={features[parseInt(selected)].title}
-			class="hidden lg:inline"
-        >
+		{#if features[parseInt(selected)].fileType === 'video'}
+			<video 
+				autoplay disablepictureinpicture loop muted
+				class="hidden lg:inline rounded-xl border-1 border-surface-100 aspect-3/2 object-cover"
+        	>
+				<source src={`${base}/imgs/${features[parseInt(selected)].fileName}`} type="video/mp4" />
+			</video>
+		{:else if features[parseInt(selected)].fileType === 'image'}
+			<img 
+            	src={`${base}/imgs/${features[parseInt(selected)].fileName}`}
+            	alt={features[parseInt(selected)].title}
+				class="hidden lg:inline rounded-xl border-1 border-surface-100"
+        	>
+		{/if}
     </div>
 
 
@@ -83,10 +97,20 @@
                     {#snippet element(attributes)}
 					    {#if !attributes.hidden}
 						    <div {...attributes} transition:slide={{ duration: 150 }}>
-								<img 
-									class="pb-16 lg:hidden"
-            						src={`${base}/imgs/${feature.imgName}`}
-            						alt={feature.title} />
+								{#if features[parseInt(selected)].fileType === 'video'}
+									<video 
+										autoplay disablepictureinpicture loop muted
+										class="mb-16 lg:hidden rounded-lg border-1 border-surface-100 aspect-3/2 object-cover"
+        							>
+										<source src={`${base}/imgs/${features[parseInt(selected)].fileName}`} type="video/mp4" />
+									</video>
+								{:else if features[parseInt(selected)].fileType === 'image'}
+									<img 
+										class="mb-16 lg:hidden rounded-lg border-1 border-surface-100"
+            							src={`${base}/imgs/${feature.fileName}`}
+            							alt={feature.title} 
+									/>
+								{/if}
 							    <p class="text-brand-contrast-dark">{feature.description}</p>
 						    </div>
 					    {/if}
