@@ -20,8 +20,8 @@
 			title: 'Connections: situated knowledge, not fixed vocabularies',
 			description:
 				"Standard ontologies and vocabularies are built without the knowledge of the communities objects come from. Connections let you attach Indigenous designations, oral histories, and cultural context directly to a record: knowledge that doesn't need to fit inside someone else's classification system to count.",
-            fileName: 'feature1.png',
-			fileType: 'image',
+            fileName: 'feature1.mp4',
+			fileType: 'video',
 			icon: IconChartCircles
 		},
 		{
@@ -60,12 +60,14 @@
 <section class="container mx-auto py-48 px-16 grid grid-cols-12 gap-16">
     <div class="col-span-12 lg:col-span-7">
 		{#if features[parseInt(selected)].fileType === 'video'}
+			{#key selected}
 			<video 
 				autoplay disablepictureinpicture loop muted
-				class="hidden lg:inline rounded-xl border-1 border-surface-100 aspect-3/2 object-cover"
+				class="hidden lg:inline rounded-xl border-1 border-surface-100 aspect-5/4 object-cover"
         	>
 				<source src={`${base}/imgs/${features[parseInt(selected)].fileName}`} type="video/mp4" />
 			</video>
+			{/key}
 		{:else if features[parseInt(selected)].fileType === 'image'}
 			<img 
             	src={`${base}/imgs/${features[parseInt(selected)].fileName}`}
@@ -97,12 +99,12 @@
                     {#snippet element(attributes)}
 					    {#if !attributes.hidden}
 						    <div {...attributes} transition:slide={{ duration: 150 }}>
-								{#if features[parseInt(selected)].fileType === 'video'}
+								{#if feature.fileType === 'video'}
 									<video 
 										autoplay disablepictureinpicture loop muted
-										class="mb-16 lg:hidden rounded-lg border-1 border-surface-100 aspect-3/2 object-cover"
+										class="mb-16 lg:hidden rounded-lg border-1 border-surface-100 aspect-5/4 object-cover"
         							>
-										<source src={`${base}/imgs/${features[parseInt(selected)].fileName}`} type="video/mp4" />
+										<source src={`${base}/imgs/${feature.fileName}`} type="video/mp4" />
 									</video>
 								{:else if features[parseInt(selected)].fileType === 'image'}
 									<img 
