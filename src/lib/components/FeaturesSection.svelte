@@ -9,7 +9,7 @@
 			id: '0',
 			title: 'Import any kind of data',
 			description:
-				"Bring in artefact records from spreadsheets, JSON files, museum databases exports . Ọkpan adapts to the data you already have, however incomplete or inconsistent it is.",
+				"Bring in artefact records from spreadsheets, JSON files, museum databases exports. Ọkpan adapts to the data you already have, however incomplete or inconsistent it is.",
             fileName: 'feature0.png',
 			fileType: 'image',
 			icon: IconTableImport
